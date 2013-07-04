@@ -1,0 +1,26 @@
+#!/usr/bin/env ruby
+#^syntax detection
+
+site 'http://community.opscode.com/api/v1'
+
+cookbook 'lvm'
+cookbook 'chef-solo'
+#cookbook 'project42', path: 'inhouse-cookbooks/project42'
+
+cookbook "postgresql",
+      git: "git@github.com:express42-cookbooks/postgresql.git",
+      ref: "0.1.4"
+
+cookbook "newrelic",
+      git: "git@github.com:heavywater/chef-newrelic.git",
+      ref: "b2309495b367da4bfe6f1761876b5d58e2455d6a"
+# cookbook 'chef-client'
+
+# cookbook 'apache2', '>= 1.0.0'
+
+# cookbook 'rvm',
+#   :git => 'https://github.com/fnichol/chef-rvm'
+
+# cookbook 'postgresql',
+#   :git => 'https://github.com/findsyou/cookbooks',
+#   :ref => 'postgresql-improvements'

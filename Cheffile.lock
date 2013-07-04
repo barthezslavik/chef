@@ -1,0 +1,26 @@
+SITE
+  remote: http://community.opscode.com/api/v1
+  specs:
+    apt (2.0.0)
+    lvm (0.8.10)
+
+GIT
+  remote: git@github.com:express42-cookbooks/postgresql.git
+  ref: 0.1.4
+  sha: a4405f32f00ede441ed55d09a9c342f44c96fff6
+  specs:
+    postgresql (0.1.4)
+
+GIT
+  remote: git@github.com:heavywater/chef-newrelic.git
+  ref: b2309495b367da4bfe6f1761876b5d58e2455d6a
+  sha: b2309495b367da4bfe6f1761876b5d58e2455d6a
+  specs:
+    newrelic (0.2.6)
+      apt (>= 0.0.0)
+
+DEPENDENCIES
+  lvm (>= 0)
+  newrelic (>= 0)
+  postgresql (>= 0)
+
